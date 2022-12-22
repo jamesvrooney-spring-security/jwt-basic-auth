@@ -2,3 +2,7 @@ spring:
   security:
 #    user.name: james
 #    user.password: password
+
+rsa:
+  public-key: classpath:/certs/public.pem
+  private-key: classpath:/certs/private.pem
