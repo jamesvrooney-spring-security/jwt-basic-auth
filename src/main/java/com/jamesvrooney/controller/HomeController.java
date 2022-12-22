@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("api/greeting")
-public class HelloController {
+@RequestMapping("/")
+public class HomeController {
 
     @GetMapping
-    public String hello() {
-        final var greeting = "Hello James";
+    public String home() {
+        final var greeting = "Hello JWT!";
 
         return greeting;
     }
